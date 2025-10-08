@@ -1,0 +1,374 @@
+m255
+K4
+z2
+!s12c _opt2
+Z0 !s99 nomlopt
+!s12c _opt1
+R0
+!s12c _opt
+R0
+!s11e vcom 2025.1_2 2025.04, Apr  7 2025
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj
+T_opt
+!s110 1759946303
+Vb;zULk`Zzai;0lgzm2_lC0
+04 5 8 work tb_pc behavior 1
+=1-000ae431a4f1-68e6a63f-392fe-ca24
+R0
+Z2 !s12f OEM100
+Z3 !s12b OEM100
+Z4 !s124 OEM100
+Z5 !s135 nogc
+Z6 o-quiet -auto_acc_if_foreign -work work +acc
+Z7 tCvgOpt 0
+n@_opt
+Z8 OL;O;2025.1_2;82
+R1
+T_opt1
+!s110 1759946846
+VX3=<PA5B;Y7icH=0lhbAn2
+04 8 8 work tb_fetch behavior 1
+=1-000ae431a4f1-68e6a85e-eb60-d00a
+R0
+R2
+R3
+R4
+R5
+R6
+R7
+n@_opt1
+R8
+R1
+T_opt2
+!s110 1759947761
+VJM4EcPDWV2^7EFa0amVJd1
+04 10 8 work tb_control behavior 1
+=1-000ae431a4f1-68e6abf1-83fc9-d9b0
+R0
+R2
+R3
+R4
+R5
+R6
+R7
+n@_opt2
+R8
+Econtrol
+Z9 w1759945718
+Z10 DPx4 work 11 riscv_types 0 22 0bcBOKFDZl8jc86XlA2kE0
+Z11 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z12 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z13 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 20
+R1
+Z14 8/home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/src/components/control.vhd
+Z15 F/home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/src/components/control.vhd
+l0
+L6 1
+VU_GWeCN;Rl[Ho1<i]WgjB2
+!s100 OL1fZ[WZ<PP7;b5oQdFgE0
+Z16 OL;C;2025.1_2;82
+32
+Z17 !s110 1759947745
+!i10b 1
+Z18 !s108 1759947745.000000
+Z19 !s90 -reportprogress|300|-work|work|/home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/src/components/control.vhd|
+Z20 !s107 /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/src/components/control.vhd|
+!i113 0
+Z21 o-work work
+Z22 tExplicit 1 CvgOpt 0
+Abehavioral
+R10
+R11
+R12
+R13
+DEx4 work 7 control 0 22 U_GWeCN;Rl[Ho1<i]WgjB2
+!i122 20
+l20
+L19 52
+VzLV>?lEnl^V3`I8Q7Ba8c0
+!s100 TYF@X8:;Lb0ieQ9Z3=SZz2
+R16
+32
+R17
+!i10b 1
+R18
+R19
+R20
+!i113 0
+R21
+R22
+Efetch
+R9
+R10
+R11
+R12
+R13
+!i122 14
+R1
+Z23 8/home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/src/components/fetch.vhd
+Z24 F/home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/src/components/fetch.vhd
+l0
+L6 1
+VM?N_mBFN5F@keZ0cQ:l8]0
+!s100 k40U^J8FzZPk?VL8OINfb3
+R16
+32
+Z25 !s110 1759946828
+!i10b 1
+Z26 !s108 1759946828.000000
+Z27 !s90 -reportprogress|300|-work|work|/home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/src/components/fetch.vhd|
+Z28 !s107 /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/src/components/fetch.vhd|
+!i113 0
+R21
+R22
+Abehavioral
+R10
+R11
+R12
+R13
+DEx4 work 5 fetch 0 22 M?N_mBFN5F@keZ0cQ:l8]0
+!i122 14
+l19
+L17 24
+Vmfk:C`6_Z^h4cdzF0ghfC2
+!s100 jYEhf0<j61eiNIXQ2RaYD2
+R16
+32
+R25
+!i10b 1
+R26
+R27
+R28
+!i113 0
+R21
+R22
+Epc
+R9
+R10
+R11
+R12
+R13
+!i122 12
+R1
+Z29 8/home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/src/components/pc.vhd
+Z30 F/home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/src/components/pc.vhd
+l0
+L6 1
+V9:@OcNYUmNOZn][H>9b161
+!s100 FEAb<hdjMN7BE7Ck85X[B1
+R16
+32
+Z31 !s110 1759946822
+!i10b 1
+Z32 !s108 1759946822.000000
+Z33 !s90 -reportprogress|300|-work|work|/home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/src/components/pc.vhd|
+Z34 !s107 /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/src/components/pc.vhd|
+!i113 0
+R21
+R22
+Artl
+R10
+R11
+R12
+R13
+DEx4 work 2 pc 0 22 9:@OcNYUmNOZn][H>9b161
+!i122 12
+l17
+L15 15
+V6Ed1SH8BRdhCj`5VPZ=K]3
+!s100 d;g`83aG1F?=7oN5TTb253
+R16
+32
+R31
+!i10b 1
+R32
+R33
+R34
+!i113 0
+R21
+R22
+Priscv_types
+R11
+R12
+R13
+!i122 18
+R9
+R1
+Z35 8/home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/src/RISCV_types.vhd
+Z36 F/home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/src/RISCV_types.vhd
+l0
+L5 31
+V0bcBOKFDZl8jc86XlA2kE0
+!s100 Nd]Qnaf4fQd1iWZYZ5agf2
+R16
+32
+Z37 !s110 1759947737
+!i10b 1
+Z38 !s108 1759947737.000000
+Z39 !s90 -reportprogress|300|-work|work|/home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/src/RISCV_types.vhd|
+Z40 !s107 /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/src/RISCV_types.vhd|
+!i113 0
+R21
+R22
+Bbody
+R10
+R11
+R12
+R13
+!i122 18
+l0
+L37 2
+Vi`R8[gTVdabZcUl6O3O=h3
+!s100 5`K;0<d7gOGoL=7=e_9`c2
+R16
+32
+R37
+!i10b 1
+R38
+R39
+R40
+!i113 0
+R21
+R22
+Etb_control
+Z41 w1759947708
+R10
+R11
+R12
+R13
+!i122 22
+R1
+Z42 8/home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/test/tb_control.vhd
+Z43 F/home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/test/tb_control.vhd
+l0
+L6 1
+VoMXd0DABO1LT2b3j2hl`]0
+!s100 ha:UnK7zWmaS?oGHlN0A^0
+R16
+32
+Z44 !s110 1759947751
+!i10b 1
+Z45 !s108 1759947751.000000
+Z46 !s90 -reportprogress|300|-work|work|/home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/test/tb_control.vhd|
+Z47 !s107 /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/test/tb_control.vhd|
+!i113 0
+R21
+R22
+Abehavior
+R10
+R11
+R12
+R13
+DEx4 work 10 tb_control 0 22 oMXd0DABO1LT2b3j2hl`]0
+!i122 22
+l34
+L9 82
+V:k3be7aAT8eWZg022=NNn2
+!s100 C0FIW9=m2Kj3nl`z:N9iX3
+R16
+32
+R44
+!i10b 1
+R45
+R46
+R47
+!i113 0
+R21
+R22
+Etb_fetch
+Z48 w1759946762
+R10
+R11
+R12
+R13
+!i122 16
+R1
+Z49 8/home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/test/tb_fetch.vhd
+Z50 F/home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/test/tb_fetch.vhd
+l0
+L6 1
+V1;50jhB;=QPEcZTNk4CHV0
+!s100 HW6dRB:cWa^4A^A>W8]I02
+R16
+32
+Z51 !s110 1759946836
+!i10b 1
+Z52 !s108 1759946835.000000
+Z53 !s90 -reportprogress|300|-work|work|/home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/test/tb_fetch.vhd|
+Z54 !s107 /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/test/tb_fetch.vhd|
+!i113 0
+R21
+R22
+Abehavior
+R10
+R11
+R12
+R13
+DEx4 work 8 tb_fetch 0 22 1;50jhB;=QPEcZTNk4CHV0
+!i122 16
+l32
+L9 86
+V1QmLg2=hP;DZjfgFo1JJ91
+!s100 H=UUNO<48=5DEaGh5^3lo1
+R16
+32
+R51
+!i10b 1
+R52
+R53
+R54
+!i113 0
+R21
+R22
+Etb_pc
+Z55 w1759946093
+R10
+R11
+R12
+R13
+!i122 8
+R1
+Z56 8/home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/test/tb_pc.vhd
+Z57 F/home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/test/tb_pc.vhd
+l0
+L6 1
+V3^aL`3M_SOG:NRLbKC:0N1
+!s100 l98nh7bfA5_oUJUXECJ2:0
+R16
+32
+Z58 !s110 1759946287
+!i10b 1
+Z59 !s108 1759946287.000000
+Z60 !s90 -reportprogress|300|-work|work|/home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/test/tb_pc.vhd|
+Z61 !s107 /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/test/tb_pc.vhd|
+!i113 0
+R21
+R22
+Abehavior
+R10
+R11
+R12
+R13
+DEx4 work 5 tb_pc 0 22 3^aL`3M_SOG:NRLbKC:0N1
+!i122 8
+l29
+L9 76
+V5UFc6hT7Y2`lzR@nX:;[T2
+!s100 17l]K:Zm^Ig33G73bi1F53
+R16
+32
+R58
+!i10b 1
+R59
+R60
+R61
+!i113 0
+R21
+R22

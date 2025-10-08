@@ -1,0 +1,437 @@
+# //  Questa Sim-64
+# //  Version 2025.1_2 linux_x86_64 Apr  7 2025
+# //
+# // Unpublished work. Copyright 2025 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+cd /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj
+vlib work
+vcom -reportprogress 300 -work work /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/src/components/pc.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 12:56:03 on Oct 08,2025
+# vcom -reportprogress 300 -work work /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/src/components/pc.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# ** Error: (vcom-11) Could not find work.riscv_types.
+# ** Error (suppressible): /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/src/components/pc.vhd(4): (vcom-1195) Cannot find expanded name "work.RISCV_types".
+# ** Error: /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/src/components/pc.vhd(4): Unknown expanded name.
+# ** Note: /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/src/components/pc.vhd(6): VHDL Compiler exiting
+# End time: 12:56:03 on Oct 08,2025, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/src/components/pc.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 12:56:05 on Oct 08,2025
+# vcom -reportprogress 300 -work work /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/src/components/pc.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# ** Error: (vcom-11) Could not find work.riscv_types.
+# ** Error (suppressible): /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/src/components/pc.vhd(4): (vcom-1195) Cannot find expanded name "work.RISCV_types".
+# ** Error: /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/src/components/pc.vhd(4): Unknown expanded name.
+# ** Note: /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/src/components/pc.vhd(6): VHDL Compiler exiting
+# End time: 12:56:05 on Oct 08,2025, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/src/components/pc.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 12:56:06 on Oct 08,2025
+# vcom -reportprogress 300 -work work /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/src/components/pc.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# ** Error: (vcom-11) Could not find work.riscv_types.
+# ** Error (suppressible): /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/src/components/pc.vhd(4): (vcom-1195) Cannot find expanded name "work.RISCV_types".
+# ** Error: /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/src/components/pc.vhd(4): Unknown expanded name.
+# ** Note: /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/src/components/pc.vhd(6): VHDL Compiler exiting
+# End time: 12:56:06 on Oct 08,2025, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/src/RISCV_types.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 12:57:56 on Oct 08,2025
+# vcom -reportprogress 300 -work work /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/src/RISCV_types.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package RISCV_types
+# -- Compiling package body RISCV_types
+# -- Loading package RISCV_types
+# End time: 12:57:56 on Oct 08,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/src/RISCV_types.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 12:57:56 on Oct 08,2025
+# vcom -reportprogress 300 -work work /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/src/RISCV_types.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package RISCV_types
+# -- Compiling package body RISCV_types
+# -- Loading package RISCV_types
+# End time: 12:57:57 on Oct 08,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/src/RISCV_types.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 12:57:57 on Oct 08,2025
+# vcom -reportprogress 300 -work work /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/src/RISCV_types.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package RISCV_types
+# -- Compiling package body RISCV_types
+# -- Loading package RISCV_types
+# End time: 12:57:57 on Oct 08,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/src/components/pc.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 12:58:00 on Oct 08,2025
+# vcom -reportprogress 300 -work work /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/src/components/pc.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package RISCV_types
+# -- Compiling entity pc
+# -- Compiling architecture rtl of pc
+# End time: 12:58:00 on Oct 08,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/src/components/pc.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 12:58:00 on Oct 08,2025
+# vcom -reportprogress 300 -work work /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/src/components/pc.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package RISCV_types
+# -- Compiling entity pc
+# -- Compiling architecture rtl of pc
+# End time: 12:58:00 on Oct 08,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/src/components/pc.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 12:58:00 on Oct 08,2025
+# vcom -reportprogress 300 -work work /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/src/components/pc.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package RISCV_types
+# -- Compiling entity pc
+# -- Compiling architecture rtl of pc
+# End time: 12:58:00 on Oct 08,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/test/tb_pc.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 12:58:07 on Oct 08,2025
+# vcom -reportprogress 300 -work work /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/test/tb_pc.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package RISCV_types
+# -- Compiling entity tb_pc
+# -- Compiling architecture behavior of tb_pc
+# End time: 12:58:07 on Oct 08,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/test/tb_pc.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 12:58:07 on Oct 08,2025
+# vcom -reportprogress 300 -work work /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/test/tb_pc.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package RISCV_types
+# -- Compiling entity tb_pc
+# -- Compiling architecture behavior of tb_pc
+# End time: 12:58:07 on Oct 08,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/test/tb_pc.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 12:58:07 on Oct 08,2025
+# vcom -reportprogress 300 -work work /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/test/tb_pc.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package RISCV_types
+# -- Compiling entity tb_pc
+# -- Compiling architecture behavior of tb_pc
+# End time: 12:58:07 on Oct 08,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.tb_pc -voptargs=+acc
+# vsim work.tb_pc -voptargs="+acc" 
+# Start time: 12:58:23 on Oct 08,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.riscv_types(body)
+# Loading work.tb_pc(behavior)#1
+# Loading work.pc(rtl)#1
+add wave  \
+sim:/tb_pc/iCLK \
+sim:/tb_pc/iRST \
+sim:/tb_pc/iNext \
+sim:/tb_pc/oPC \
+sim:/tb_pc/cCLK_PERIOD
+run 1000
+# ** Note: Simulation complete.
+#    Time: 120 ns  Iteration: 0  Instance: /tb_pc
+quit -sim
+# End time: 13:02:06 on Oct 08,2025, Elapsed time: 0:03:43
+# Errors: 0, Warnings: 1
+vcom -reportprogress 300 -work work /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/src/RISCV_types.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 13:06:48 on Oct 08,2025
+# vcom -reportprogress 300 -work work /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/src/RISCV_types.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package RISCV_types
+# -- Compiling package body RISCV_types
+# -- Loading package RISCV_types
+# End time: 13:06:48 on Oct 08,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/src/RISCV_types.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 13:06:48 on Oct 08,2025
+# vcom -reportprogress 300 -work work /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/src/RISCV_types.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package RISCV_types
+# -- Compiling package body RISCV_types
+# -- Loading package RISCV_types
+# End time: 13:06:49 on Oct 08,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/src/components/pc.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 13:07:02 on Oct 08,2025
+# vcom -reportprogress 300 -work work /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/src/components/pc.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package RISCV_types
+# -- Compiling entity pc
+# -- Compiling architecture rtl of pc
+# End time: 13:07:02 on Oct 08,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/src/components/pc.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 13:07:02 on Oct 08,2025
+# vcom -reportprogress 300 -work work /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/src/components/pc.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package RISCV_types
+# -- Compiling entity pc
+# -- Compiling architecture rtl of pc
+# End time: 13:07:02 on Oct 08,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/src/components/fetch.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 13:07:07 on Oct 08,2025
+# vcom -reportprogress 300 -work work /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/src/components/fetch.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package RISCV_types
+# -- Compiling entity fetch
+# -- Compiling architecture Behavioral of fetch
+# End time: 13:07:07 on Oct 08,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/src/components/fetch.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 13:07:08 on Oct 08,2025
+# vcom -reportprogress 300 -work work /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/src/components/fetch.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package RISCV_types
+# -- Compiling entity fetch
+# -- Compiling architecture Behavioral of fetch
+# End time: 13:07:08 on Oct 08,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/test/tb_fetch.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 13:07:15 on Oct 08,2025
+# vcom -reportprogress 300 -work work /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/test/tb_fetch.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package RISCV_types
+# -- Compiling entity tb_fetch
+# -- Compiling architecture behavior of tb_fetch
+# End time: 13:07:15 on Oct 08,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/test/tb_fetch.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 13:07:15 on Oct 08,2025
+# vcom -reportprogress 300 -work work /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/test/tb_fetch.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package RISCV_types
+# -- Compiling entity tb_fetch
+# -- Compiling architecture behavior of tb_fetch
+# End time: 13:07:16 on Oct 08,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.tb_fetch
+# vsim -voptargs="+acc" work.tb_fetch 
+# Start time: 13:07:25 on Oct 08,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.riscv_types(body)
+# Loading work.tb_fetch(behavior)#1
+# Loading work.fetch(behavioral)#1
+add wave  \
+sim:/tb_fetch/iCLK \
+sim:/tb_fetch/iRST \
+sim:/tb_fetch/iBranch \
+sim:/tb_fetch/iZero \
+sim:/tb_fetch/iJump \
+sim:/tb_fetch/iImm \
+sim:/tb_fetch/oPC \
+sim:/tb_fetch/cCLK_PERIOD
+run 1000
+# ** Note: Simulation complete.
+#    Time: 170 ns  Iteration: 0  Instance: /tb_fetch
+quit -sim
+# End time: 13:22:04 on Oct 08,2025, Elapsed time: 0:14:39
+# Errors: 0, Warnings: 1
+vcom -reportprogress 300 -work work /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/src/RISCV_types.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 13:22:16 on Oct 08,2025
+# vcom -reportprogress 300 -work work /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/src/RISCV_types.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package RISCV_types
+# -- Compiling package body RISCV_types
+# -- Loading package RISCV_types
+# End time: 13:22:16 on Oct 08,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/src/RISCV_types.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 13:22:17 on Oct 08,2025
+# vcom -reportprogress 300 -work work /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/src/RISCV_types.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package RISCV_types
+# -- Compiling package body RISCV_types
+# -- Loading package RISCV_types
+# End time: 13:22:17 on Oct 08,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/src/components/control.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 13:22:24 on Oct 08,2025
+# vcom -reportprogress 300 -work work /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/src/components/control.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package RISCV_types
+# -- Compiling entity control
+# -- Compiling architecture Behavioral of control
+# End time: 13:22:24 on Oct 08,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/src/components/control.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 13:22:25 on Oct 08,2025
+# vcom -reportprogress 300 -work work /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/src/components/control.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package RISCV_types
+# -- Compiling entity control
+# -- Compiling architecture Behavioral of control
+# End time: 13:22:25 on Oct 08,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/test/tb_control.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 13:22:31 on Oct 08,2025
+# vcom -reportprogress 300 -work work /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/test/tb_control.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package RISCV_types
+# -- Compiling entity tb_control
+# -- Compiling architecture behavior of tb_control
+# End time: 13:22:31 on Oct 08,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/test/tb_control.vhd
+# QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+# Start time: 13:22:31 on Oct 08,2025
+# vcom -reportprogress 300 -work work /home/hbhatt10/cpre381/proj1/CPRE3810/CPRE3810/proj/test/tb_control.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package RISCV_types
+# -- Compiling entity tb_control
+# -- Compiling architecture behavior of tb_control
+# End time: 13:22:31 on Oct 08,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.tb_control
+# vsim -voptargs="+acc" work.tb_control 
+# Start time: 13:22:41 on Oct 08,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.riscv_types(body)
+# Loading work.tb_control(behavior)#1
+# Loading work.control(behavioral)#1
+add wave  \
+sim:/tb_control/opcode \
+sim:/tb_control/funct3 \
+sim:/tb_control/funct7 \
+sim:/tb_control/ALU_Sel \
+sim:/tb_control/RegWrite \
+sim:/tb_control/MemRead \
+sim:/tb_control/MemWrite \
+sim:/tb_control/Branch
+run 1000
+# ** Note: Simulation complete.
+#    Time: 180 ns  Iteration: 0  Instance: /tb_control
+# Break key hit
+# Break key hit
