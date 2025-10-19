@@ -1,0 +1,73 @@
+QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+Start time: 17:54:25 on Oct 19,2025
+vcom -2008 -work internal/ModelSimContainer/work proj/src/RISCV_types.vhd internal/testpy/tb.vhd proj/src/RISCV_types.vhd proj/src/mem.vhd proj/src/components/fetch.vhd proj/src/components/andg2.vhd proj/src/components/alu.vhd proj/src/components/imm_gen.vhd proj/src/components/Adder.vhd proj/src/components/onescomp.vhd proj/src/components/dffg.vhd proj/src/components/pc.vhd proj/src/components/org2.vhd proj/src/components/decoder5to32.vhd proj/src/components/alu_addsub.vhd proj/src/components/dffn.vhd proj/src/components/mux2t1.vhd proj/src/components/barrel_shifter.vhd proj/src/components/mux32to1.vhd proj/src/components/sign_ext12.vhd proj/src/components/zero_ext12.vhd proj/src/components/comparator.vhd proj/src/components/invg.vhd proj/src/components/control.vhd proj/src/components/regfile.vhd proj/src/TopLevel/RISCV_Processor.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling package RISCV_types
+-- Compiling package body RISCV_types
+-- Loading package RISCV_types
+-- Loading package std_logic_textio
+-- Loading package ENV
+-- Compiling entity tb
+-- Compiling architecture mixed of tb
+** Warning: proj/src/RISCV_types.vhd(5): (vcom-1615) Existing package 'RISCV_types' at line 12 will be overwritten.
+-- Compiling package RISCV_types
+** Warning: proj/src/RISCV_types.vhd(37): (vcom-1615) Existing package body 'RISCV_types(body)' at line 37 will be overwritten.
+-- Compiling package body RISCV_types
+-- Loading package RISCV_types
+-- Compiling entity mem
+-- Compiling architecture rtl of mem
+-- Loading package RISCV_types
+-- Compiling entity fetch
+-- Compiling architecture Behavioral of fetch
+-- Compiling entity andg2
+-- Compiling architecture dataflow of andg2
+-- Compiling entity alu
+-- Compiling architecture behavioral of alu
+-- Compiling entity imm_gen
+-- Compiling architecture Behavioral of imm_gen
+-- Compiling entity Adder
+-- Compiling architecture behavior of Adder
+-- Compiling entity onescomp
+-- Compiling architecture rtl of onescomp
+-- Compiling entity dffg
+-- Compiling architecture mixed of dffg
+-- Compiling entity pc
+-- Compiling architecture rtl of pc
+-- Compiling entity org2
+-- Compiling architecture dataflow of org2
+-- Compiling entity decoder5to32
+-- Compiling architecture dataflow of decoder5to32
+-- Compiling entity alu_addsub
+-- Compiling architecture rtl of alu_addsub
+-- Compiling entity dffn
+-- Compiling architecture structural of dffn
+-- Compiling entity mux2t1
+-- Compiling architecture structural of mux2t1
+-- Compiling entity barrel_shifter
+-- Compiling architecture Behavioral of barrel_shifter
+-- Compiling entity mux32to1
+-- Compiling architecture rtl of mux32to1
+-- Compiling entity sign_ext12
+-- Compiling architecture rtl of sign_ext12
+-- Compiling entity zero_ext12
+-- Compiling architecture rtl of zero_ext12
+-- Compiling entity comparator
+-- Compiling architecture Behavioral of comparator
+-- Compiling entity invg
+-- Compiling architecture dataflow of invg
+-- Compiling entity control
+-- Compiling architecture Behavioral of control
+-- Compiling entity regfile
+-- Compiling architecture Behavioral of regfile
+-- Compiling entity RISCV_Processor
+-- Compiling architecture rtl of RISCV_Processor
+-- Loading entity mem
+-- Loading entity imm_gen
+-- Loading entity control
+-- Loading entity regfile
+-- Loading entity alu
+End time: 17:54:25 on Oct 19,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 2

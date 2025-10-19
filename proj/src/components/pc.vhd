@@ -25,5 +25,6 @@ begin
             end if;
         end if;
     end process;
+
     oPC <= reg_pc;
 end architecture;

@@ -1,5 +1,5 @@
 QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
-Start time: 12:40:46 on Oct 15,2025
+Start time: 16:48:12 on Oct 19,2025
 vcom -2008 -work internal/ModelSimContainer/work proj/src/RISCV_types.vhd internal/testpy/tb.vhd proj/src/RISCV_types.vhd proj/src/mem.vhd proj/src/components/fetch.vhd proj/src/components/andg2.vhd proj/src/components/alu.vhd proj/src/components/imm_gen.vhd proj/src/components/Adder.vhd proj/src/components/onescomp.vhd proj/src/components/dffg.vhd proj/src/components/pc.vhd proj/src/components/org2.vhd proj/src/components/decoder5to32.vhd proj/src/components/alu_addsub.vhd proj/src/components/dffn.vhd proj/src/components/mux2t1.vhd proj/src/components/barrel_shifter.vhd proj/src/components/mux32to1.vhd proj/src/components/sign_ext12.vhd proj/src/components/zero_ext12.vhd proj/src/components/comparator.vhd proj/src/components/invg.vhd proj/src/components/control.vhd proj/src/components/regfile.vhd proj/src/TopLevel/RISCV_Processor.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -25,9 +25,16 @@ vcom -2008 -work internal/ModelSimContainer/work proj/src/RISCV_types.vhd intern
 -- Compiling entity andg2
 -- Compiling architecture dataflow of andg2
 -- Compiling entity alu
--- Compiling architecture Behavioral of alu
--- Compiling entity imm_gen
--- Compiling architecture Behavioral of imm_gen
+-- Compiling architecture behavioral of alu
+** Warning: proj/src/components/imm_gen.vhd(6): (vcom-1615) Existing entity 'RISCV_Processor' at /home/cjhoy/cpre3810-toolflow_new/cpre3810-toolflow/proj/src/TopLevel/RISCV_Processor.vhd(6) will be overwritten.
+-- Compiling entity RISCV_Processor
+** Warning: proj/src/components/imm_gen.vhd(18): (vcom-1615) Existing architecture 'RISCV_Processor(structure)' at /home/cjhoy/cpre3810-toolflow_new/cpre3810-toolflow/proj/src/TopLevel/RISCV_Processor.vhd(18) will be overwritten.
+-- Compiling architecture structure of RISCV_Processor
+-- Loading entity mem
+-- Loading entity imm_gen
+-- Loading entity control
+-- Loading entity regfile
+-- Loading entity alu
 -- Compiling entity Adder
 -- Compiling architecture behavior of Adder
 -- Compiling entity onescomp
@@ -61,14 +68,12 @@ vcom -2008 -work internal/ModelSimContainer/work proj/src/RISCV_types.vhd intern
 -- Compiling entity control
 -- Compiling architecture Behavioral of control
 -- Compiling entity regfile
--- Compiling architecture structural of regfile
+-- Compiling architecture Behavioral of regfile
+** Warning: proj/src/TopLevel/RISCV_Processor.vhd(6): (vcom-1615) Existing entity 'RISCV_Processor' at proj/src/components/imm_gen.vhd(6) will be overwritten.
 -- Compiling entity RISCV_Processor
+** Warning: proj/src/TopLevel/RISCV_Processor.vhd(18): (vcom-1615) Existing architecture 'RISCV_Processor(structure)' at proj/src/components/imm_gen.vhd(18) will be overwritten.
 -- Compiling architecture structure of RISCV_Processor
--- Loading entity fetch
--- Loading entity mem
 -- Loading entity control
 -- Loading entity regfile
--- Loading entity imm_gen
--- Loading entity alu
-End time: 12:40:46 on Oct 15,2025, Elapsed time: 0:00:00
-Errors: 0, Warnings: 2
+End time: 16:48:12 on Oct 19,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 6

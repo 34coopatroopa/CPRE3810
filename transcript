@@ -12,3 +12,178 @@
 # // of the Customer's facilities without the express written permission of SISW,
 # // and may not be used in any way not expressly authorized by SISW.
 # //
+add wave -position insertpoint  \
+vsim:/tb/CLK \
+vsim:/tb/reset \
+vsim:/tb/reset_done \
+vsim:/tb/alu_out
+add wave -position insertpoint  \
+vsim:/tb/MyRiscv/IMem/clk \
+vsim:/tb/MyRiscv/IMem/addr \
+vsim:/tb/MyRiscv/IMem/data \
+vsim:/tb/MyRiscv/IMem/we \
+vsim:/tb/MyRiscv/IMem/q
+add wave -position insertpoint  \
+vsim:/tb/MyRiscv/u_ctl/opcode \
+vsim:/tb/MyRiscv/u_ctl/funct3 \
+vsim:/tb/MyRiscv/u_ctl/funct7 \
+vsim:/tb/MyRiscv/u_ctl/ALU_Sel \
+vsim:/tb/MyRiscv/u_ctl/RegWrite \
+vsim:/tb/MyRiscv/u_ctl/MemRead \
+vsim:/tb/MyRiscv/u_ctl/MemWrite \
+vsim:/tb/MyRiscv/u_ctl/Branch
+add wave -position insertpoint  \
+vsim1:/tb/CLK \
+vsim1:/tb/reset \
+vsim1:/tb/reset_done \
+vsim1:/tb/alu_out
+add wave -position insertpoint  \
+vsim1:/tb/MyRiscv/u_alu/A \
+vsim1:/tb/MyRiscv/u_alu/B \
+vsim1:/tb/MyRiscv/u_alu/ALU_Sel \
+vsim1:/tb/MyRiscv/u_alu/Result \
+vsim1:/tb/MyRiscv/u_alu/Zero
+add wave -position insertpoint  \
+vsim1:/tb/MyRiscv/IMem/clk \
+vsim1:/tb/MyRiscv/IMem/addr \
+vsim1:/tb/MyRiscv/IMem/data \
+vsim1:/tb/MyRiscv/IMem/we \
+vsim1:/tb/MyRiscv/IMem/q
+add wave -position insertpoint  \
+vsim1:/tb/MyRiscv/u_imm/instr \
+vsim1:/tb/MyRiscv/u_imm/imm \
+vsim1:/tb/MyRiscv/u_imm/opcode \
+vsim1:/tb/MyRiscv/u_imm/imm_i \
+vsim1:/tb/MyRiscv/u_imm/imm_s \
+vsim1:/tb/MyRiscv/u_imm/imm_b \
+vsim1:/tb/MyRiscv/u_imm/imm_u \
+vsim1:/tb/MyRiscv/u_imm/imm_j
+add wave -position insertpoint  \
+vsim1:/tb/MyRiscv/u_ctl/opcode \
+vsim1:/tb/MyRiscv/u_ctl/funct3 \
+vsim1:/tb/MyRiscv/u_ctl/funct7 \
+vsim1:/tb/MyRiscv/u_ctl/ALU_Sel \
+vsim1:/tb/MyRiscv/u_ctl/RegWrite \
+vsim1:/tb/MyRiscv/u_ctl/MemRead \
+vsim1:/tb/MyRiscv/u_ctl/MemWrite \
+vsim1:/tb/MyRiscv/u_ctl/Branch
+add wave -position insertpoint  \
+vsim1:/tb/MyRiscv/u_rf/i_CLK \
+vsim1:/tb/MyRiscv/u_rf/i_RST \
+vsim1:/tb/MyRiscv/u_rf/i_WE \
+vsim1:/tb/MyRiscv/u_rf/i_RD \
+vsim1:/tb/MyRiscv/u_rf/i_D \
+vsim1:/tb/MyRiscv/u_rf/i_RS1 \
+vsim1:/tb/MyRiscv/u_rf/i_RS2 \
+vsim1:/tb/MyRiscv/u_rf/o_RS1 \
+vsim1:/tb/MyRiscv/u_rf/o_RS2 \
+vsim1:/tb/MyRiscv/u_rf/rf
+quit -sim
+add wave -position insertpoint  \
+vsim2:/tb/MyRiscv/instr_f \
+vsim2:/tb/MyRiscv/instr_id
+add wave -position insertpoint  \
+vsim2:/tb/CLK \
+vsim2:/tb/reset \
+vsim2:/tb/reset_done \
+vsim2:/tb/alu_out
+add wave -position insertpoint  \
+vsim2:/tb/MyRiscv/iCLK \
+vsim2:/tb/MyRiscv/iRST \
+vsim2:/tb/MyRiscv/iInstLd \
+vsim2:/tb/MyRiscv/iInstAddr \
+vsim2:/tb/MyRiscv/iInstExt \
+vsim2:/tb/MyRiscv/oALUOut \
+vsim2:/tb/MyRiscv/s_DMemWr \
+vsim2:/tb/MyRiscv/s_DMemAddr \
+vsim2:/tb/MyRiscv/s_DMemData \
+vsim2:/tb/MyRiscv/s_RegWr \
+vsim2:/tb/MyRiscv/s_RegWrAddr \
+vsim2:/tb/MyRiscv/s_RegWrData \
+vsim2:/tb/MyRiscv/s_Halt \
+vsim2:/tb/MyRiscv/s_Ovfl \
+vsim2:/tb/MyRiscv/PC \
+vsim2:/tb/MyRiscv/next_PC \
+vsim2:/tb/MyRiscv/instr_f \
+vsim2:/tb/MyRiscv/instr_id \
+vsim2:/tb/MyRiscv/pc4_id \
+vsim2:/tb/MyRiscv/opcode_id \
+vsim2:/tb/MyRiscv/rd_id \
+vsim2:/tb/MyRiscv/rs1_id \
+vsim2:/tb/MyRiscv/rs2_id \
+vsim2:/tb/MyRiscv/funct3_id \
+vsim2:/tb/MyRiscv/funct7_id \
+vsim2:/tb/MyRiscv/imm_id \
+vsim2:/tb/MyRiscv/rs1_val_id \
+vsim2:/tb/MyRiscv/rs2_val_id \
+vsim2:/tb/MyRiscv/ALU_Sel_id \
+vsim2:/tb/MyRiscv/RegWrite_id \
+vsim2:/tb/MyRiscv/MemRead_id \
+vsim2:/tb/MyRiscv/MemWrite_id \
+vsim2:/tb/MyRiscv/rd_ex \
+vsim2:/tb/MyRiscv/pc4_ex \
+vsim2:/tb/MyRiscv/opcode_ex \
+vsim2:/tb/MyRiscv/funct3_ex \
+vsim2:/tb/MyRiscv/ALU_Sel_ex \
+vsim2:/tb/MyRiscv/RegWrite_ex \
+vsim2:/tb/MyRiscv/MemRead_ex \
+vsim2:/tb/MyRiscv/MemWrite_ex \
+vsim2:/tb/MyRiscv/rs1_val_ex \
+vsim2:/tb/MyRiscv/rs2_val_ex \
+vsim2:/tb/MyRiscv/imm_ex \
+vsim2:/tb/MyRiscv/alu_b \
+vsim2:/tb/MyRiscv/alu_res \
+vsim2:/tb/MyRiscv/alu_zero \
+vsim2:/tb/MyRiscv/rd_wb \
+vsim2:/tb/MyRiscv/RegWrite_wb \
+vsim2:/tb/MyRiscv/MemRead_wb \
+vsim2:/tb/MyRiscv/wb_from_pc4_wb \
+vsim2:/tb/MyRiscv/write_data_wb \
+vsim2:/tb/MyRiscv/dmem_q
+add wave -position insertpoint  \
+vsim2:/tb/MyRiscv/IMem/clk \
+vsim2:/tb/MyRiscv/IMem/addr \
+vsim2:/tb/MyRiscv/IMem/data \
+vsim2:/tb/MyRiscv/IMem/we \
+vsim2:/tb/MyRiscv/IMem/q
+add wave -position insertpoint  \
+vsim2:/tb/MyRiscv/u_imm/instr \
+vsim2:/tb/MyRiscv/u_imm/imm \
+vsim2:/tb/MyRiscv/u_imm/opcode \
+vsim2:/tb/MyRiscv/u_imm/imm_i \
+vsim2:/tb/MyRiscv/u_imm/imm_s \
+vsim2:/tb/MyRiscv/u_imm/imm_b \
+vsim2:/tb/MyRiscv/u_imm/imm_u \
+vsim2:/tb/MyRiscv/u_imm/imm_j
+add wave -position insertpoint  \
+vsim2:/tb/MyRiscv/u_ctl/opcode \
+vsim2:/tb/MyRiscv/u_ctl/funct3 \
+vsim2:/tb/MyRiscv/u_ctl/funct7 \
+vsim2:/tb/MyRiscv/u_ctl/ALU_Sel \
+vsim2:/tb/MyRiscv/u_ctl/RegWrite \
+vsim2:/tb/MyRiscv/u_ctl/MemRead \
+vsim2:/tb/MyRiscv/u_ctl/MemWrite \
+vsim2:/tb/MyRiscv/u_ctl/Branch
+add wave -position insertpoint  \
+vsim2:/tb/MyRiscv/u_rf/i_CLK \
+vsim2:/tb/MyRiscv/u_rf/i_RST \
+vsim2:/tb/MyRiscv/u_rf/i_WE \
+vsim2:/tb/MyRiscv/u_rf/i_RD \
+vsim2:/tb/MyRiscv/u_rf/i_D \
+vsim2:/tb/MyRiscv/u_rf/i_RS1 \
+vsim2:/tb/MyRiscv/u_rf/i_RS2 \
+vsim2:/tb/MyRiscv/u_rf/o_RS1 \
+vsim2:/tb/MyRiscv/u_rf/o_RS2 \
+vsim2:/tb/MyRiscv/u_rf/rf
+add wave -position insertpoint  \
+vsim2:/tb/MyRiscv/u_alu/A \
+vsim2:/tb/MyRiscv/u_alu/B \
+vsim2:/tb/MyRiscv/u_alu/ALU_Sel \
+vsim2:/tb/MyRiscv/u_alu/Result \
+vsim2:/tb/MyRiscv/u_alu/Zero
+add wave -position insertpoint  \
+vsim2:/tb/MyRiscv/DMem/clk \
+vsim2:/tb/MyRiscv/DMem/addr \
+vsim2:/tb/MyRiscv/DMem/data \
+vsim2:/tb/MyRiscv/DMem/we \
+vsim2:/tb/MyRiscv/DMem/q

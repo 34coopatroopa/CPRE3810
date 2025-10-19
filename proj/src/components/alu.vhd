@@ -1,62 +1,87 @@
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
-use work.RISCV_types.all;
 
 entity alu is
     port (
-        A, B      : in  word;
-        ALU_Sel   : in  std_logic_vector(3 downto 0);
-        Result    : out word;
-        Zero      : out std_logic
+        A        : in  std_logic_vector(31 downto 0);
+        B        : in  std_logic_vector(31 downto 0);
+        ALU_Sel  : in  std_logic_vector(3 downto 0);  -- control input
+        Result   : out std_logic_vector(31 downto 0);
+        Zero     : out std_logic                     -- asserted if Result == 0
     );
-end entity;
+end alu;
 
-architecture Behavioral of alu is
-    signal temp : word := (others => '0');
+architecture behavioral of alu is
 begin
-    process (A, B, ALU_Sel)
-        variable sa : integer range 0 to 31;
+
+    -- fully combinational ALU process
+    process(all)
+        variable a_signed : signed(31 downto 0);
+        variable b_signed : signed(31 downto 0);
+        variable temp     : signed(31 downto 0);
     begin
-        temp <= (others => '0');
+        -- defaults
+        a_signed := signed(A);
+        b_signed := signed(B);
+        temp     := (others => '0');
 
         case ALU_Sel is
-            when "0000" =>  -- ADD
-                temp <= std_logic_vector(signed(A) + signed(B));
+            ----------------------------------------------------------------
+            -- Arithmetic operations
+            ----------------------------------------------------------------
+            when "0000" =>  -- ADD / ADDI
+                temp := a_signed + b_signed;
 
             when "0001" =>  -- SUB
-                temp <= std_logic_vector(signed(A) - signed(B));
+                temp := a_signed - b_signed;
 
+            ----------------------------------------------------------------
+            -- Logical operations
+            ----------------------------------------------------------------
             when "0010" =>  -- AND
-                temp <= A and B;
+                temp := signed(A and B);
 
             when "0011" =>  -- OR
-                temp <= A or B;
+                temp := signed(A or B);
 
             when "0100" =>  -- XOR
-                temp <= A xor B;
+                temp := signed(A xor B);
 
-            when "0101" =>  -- SLL
-                sa := to_integer(unsigned(B(4 downto 0)));
-                temp <= std_logic_vector(shift_left(unsigned(A), sa));
+            when "0101" =>  -- NOR
+                temp := signed(not (A or B));
 
-            when "0110" =>  -- SRL
-                sa := to_integer(unsigned(B(4 downto 0)));
-                temp <= std_logic_vector(shift_right(unsigned(A), sa));
+            ----------------------------------------------------------------
+            -- Set less than (signed)
+            ----------------------------------------------------------------
+            when "0110" =>
+                if a_signed < b_signed then
+                    temp := to_signed(1, 32);
+                else
+                    temp := to_signed(0, 32);
+                end if;
 
-            when "0111" =>  -- SRA
-                sa := to_integer(unsigned(B(4 downto 0)));
-                temp <= std_logic_vector(shift_right(signed(A), sa));
+            ----------------------------------------------------------------
+            -- Shift operations
+            ----------------------------------------------------------------
+            when "0111" =>  -- SLL (logical left)
+                temp := shift_left(a_signed, to_integer(unsigned(B(4 downto 0))));
 
+            when "1000" =>  -- SRL (logical right)
+                temp := shift_right(signed(unsigned(A)), to_integer(unsigned(B(4 downto 0))));
+
+            when "1001" =>  -- SRA (arithmetic right)
+                temp := shift_right(a_signed, to_integer(unsigned(B(4 downto 0))));
+
+            ----------------------------------------------------------------
+            -- Default case
+            ----------------------------------------------------------------
             when others =>
-                temp <= (others => '0');
+                temp := (others => '0');
         end case;
 
-        Result <= temp;
-        if temp = (31 downto 0 => '0') then  -- explicit 32-bit zero check
-            Zero <= '1';
-        else
-            Zero <= '0';
-        end if;
+        Result <= std_logic_vector(temp);
+        Zero   <= '1' when temp = 0 else '0';
     end process;
-end architecture;
+
+end behavioral;
