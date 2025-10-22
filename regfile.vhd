@@ -26,7 +26,6 @@ architecture Behavioral of regfile is
     return to_integer(unsigned(s));
   end function;
 
-  -- helpers for bypass compare
   signal we_s    : std_logic;
   signal rd_s    : std_logic_vector(4 downto 0);
   signal rs1_s   : std_logic_vector(4 downto 0);
@@ -38,14 +37,17 @@ begin
   rs2_s <= i_RS2;
 
   --------------------------------------------------------------------------
-  -- Synchronous write (x0 is hard-wired to zero)
+  -- Synchronous write and architectural reset values
   --------------------------------------------------------------------------
   process(i_CLK)
     variable widx : integer;
   begin
     if rising_edge(i_CLK) then
       if i_RST = '1' then
+        -- Clear all registers, then preload architectural reset values
         rf <= (others => (others => '0'));
+        rf(2) <= x"7FFFFFF0";  -- Stack Pointer (sp)
+        rf(5) <= x"10010000";  -- Global Pointer (gp)
       else
         rf(0) <= (others => '0');  -- x0 always 0
         if we_s = '1' then
@@ -59,13 +61,9 @@ begin
   end process;
 
   --------------------------------------------------------------------------
-  -- Asynchronous reads with single-cycle RAW bypass
+  -- Asynchronous reads (no combinational feedback loops)
   --------------------------------------------------------------------------
-  -- If reading the same register being written this cycle (and not x0),
-  -- return the write data (i_D) directly. Otherwise return file contents.
-  o_RS1 <= i_D when (we_s = '1' and rd_s = rs1_s and rd_s /= "00000")
-           else rf(to_idx(rs1_s));
+  o_RS1 <= rf(to_idx(rs1_s));
+  o_RS2 <= rf(to_idx(rs2_s));
 
-  o_RS2 <= i_D when (we_s = '1' and rd_s = rs2_s and rd_s /= "00000")
-           else rf(to_idx(rs2_s));
 end architecture Behavioral;

@@ -35,7 +35,7 @@ architecture rtl of RISCV_Processor is
 
   -- instruction memory (combinational read)
   signal instr_f : word := (others=>'0');
-  signal imem_addr_mux : std_logic_vector(9 downto 0);
+  signal imem_addr_mux : word;  -- full 32-bit address
   signal imem_data_mux : std_logic_vector(N-1 downto 0);
 
   -- decode fields (from instr_f)
@@ -44,7 +44,7 @@ architecture rtl of RISCV_Processor is
   signal rs1      : std_logic_vector(4 downto 0);
   signal rs2      : std_logic_vector(4 downto 0);
   signal funct3   : std_logic_vector(2 downto 0);
-  signal funct7   : std_logic_vector(6 downto 0);  -- MUST be 31:25
+  signal funct7   : std_logic_vector(6 downto 0);  -- 31:25
 
   -- control / immediates
   signal imm      : word := (others=>'0');
@@ -73,25 +73,25 @@ begin
   process(iCLK, iRST)
   begin
   if iRST = '1' then
-    pc_r <= x"00400000";  -- start address for testbench
-    elsif rising_edge(iCLK) then
-      if s_Halt = '0' then
-        pc_r <= next_pc;
-      end if;
+    pc_r <= x"00400000";  -- start address
+  elsif rising_edge(iCLK) then
+    if s_Halt = '0' then
+      pc_r <= next_pc;
     end if;
+  end if;
   end process;
 
   ----------------------------------------------------------------
   -- Instruction memory (loader mux)
   ----------------------------------------------------------------
-  imem_addr_mux <= iInstAddr(11 downto 2) when iInstLd='1' else pc_r(11 downto 2);
-  imem_data_mux <= iInstExt               when iInstLd='1' else (others => '0');
+  imem_addr_mux <= iInstAddr when iInstLd='1' else pc_r;
+  imem_data_mux <= iInstExt  when iInstLd='1' else (others => '0');
 
   IMem : entity work.mem
     generic map (DATA_WIDTH => N, ADDR_WIDTH => 10)
     port map (
       clk  => iCLK,
-      addr => imem_addr_mux,
+      addr => imem_addr_mux,   -- full 32-bit address
       data => imem_data_mux,
       we   => iInstLd,
       q    => instr_f
@@ -105,7 +105,7 @@ begin
   funct3 <= instr_f(14 downto 12);
   rs1    <= instr_f(19 downto 15);
   rs2    <= instr_f(24 downto 20);
-  funct7 <= instr_f(31 downto 25);  -- << correct slice >>
+  funct7 <= instr_f(31 downto 25);
 
   u_imm : entity work.imm_gen
     port map (instr => instr_f, imm => imm);
@@ -122,7 +122,9 @@ begin
       Branch   => open
     );
 
-  -- Register file: write on this cycle’s rising edge with wb_* signals
+  ----------------------------------------------------------------
+  -- Register file
+  ----------------------------------------------------------------
   u_rf : entity work.regfile
     port map (
       i_CLK => iCLK,
@@ -158,13 +160,13 @@ begin
   oALUOut <= alu_res;
 
   ----------------------------------------------------------------
-  -- Data memory (combinational read, sync write)
+  -- Data memory
   ----------------------------------------------------------------
   DMem : entity work.mem
     generic map (DATA_WIDTH => N, ADDR_WIDTH => 10)
     port map (
       clk  => iCLK,
-      addr => alu_res(11 downto 2),
+      addr => alu_res,    -- full 32-bit address
       data => rs2_val,
       we   => MemWrite,
       q    => dmem_q
@@ -185,8 +187,8 @@ begin
 
     if opcode = "1100011" then  -- BRANCH
       case funct3 is
-        when "000" => if alu_zero = '1' then next_pc <= std_logic_vector(pc_branch); end if; -- BEQ
-        when "001" => if alu_zero = '0' then next_pc <= std_logic_vector(pc_branch); end if; -- BNE
+        when "000" => if alu_zero = '1' then next_pc <= std_logic_vector(pc_branch); end if;
+        when "001" => if alu_zero = '0' then next_pc <= std_logic_vector(pc_branch); end if;
         when "100" => if signed(rs1_val) <  signed(rs2_val) then next_pc <= std_logic_vector(pc_branch); end if;
         when "101" => if signed(rs1_val) >= signed(rs2_val) then next_pc <= std_logic_vector(pc_branch); end if;
         when "110" => if unsigned(rs1_val) <  unsigned(rs2_val) then next_pc <= std_logic_vector(pc_branch); end if;
@@ -238,6 +240,5 @@ begin
   s_DMemData  <= rs2_val;
 
   s_Ovfl      <= '0';
-  -- Halt: SYSTEM with rd=rs1=0 (ecall/wfi pattern in toolflow)
-  s_Halt <= '1' when (opcode = "1110011" and rs1 = "00000" and rd = "00000") else '0';
+  s_Halt      <= '1' when (opcode = "1110011" and rs1 = "00000" and rd = "00000") else '0';
 end architecture;
