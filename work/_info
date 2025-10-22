@@ -1,0 +1,334 @@
+m255
+K4
+z2
+!s12c _opt1
+Z0 !s99 nomlopt
+!s12c _opt
+R0
+!s11e vcom 2025.1_2 2025.04, Apr  7 2025
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/hbhatt10/cpre381/CPRE3810
+T_opt
+!s110 1761154320
+V4THJnQMP^@GfXiD3A9=Zf2
+04 17 3 work tb_barrel_shifter sim 1
+=1-000ae431a4f1-68f91510-6cfa9-34c6
+R0
+Z2 !s12f OEM100
+Z3 !s12b OEM100
+Z4 !s124 OEM100
+Z5 !s135 nogc
+Z6 o-quiet -auto_acc_if_foreign -work work +acc
+Z7 tCvgOpt 0
+n@_opt
+Z8 OL;O;2025.1_2;82
+R1
+T_opt1
+!s110 1761155203
+V;egzHCz`71@QX9F2=k?_V3
+04 6 3 work tb_alu sim 1
+=1-000ae431a4f1-68f91883-aa218-3d84
+R0
+R2
+R3
+R4
+R5
+R6
+R7
+n@_opt1
+R8
+Ealu
+Z9 w1761152186
+Z10 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z11 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z12 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 15
+R1
+Z13 8/home/hbhatt10/cpre381/CPRE3810/alu.vhd
+Z14 F/home/hbhatt10/cpre381/CPRE3810/alu.vhd
+l0
+L5 1
+Vm80WX>b`Nb[jVb2X;h3Qe3
+!s100 DS]WLVa?nM`V0J0MTOXjR2
+Z15 OL;C;2025.1_2;82
+32
+Z16 !s110 1761155190
+!i10b 1
+Z17 !s108 1761155190.000000
+Z18 !s90 -reportprogress|300|-work|work|/home/hbhatt10/cpre381/CPRE3810/alu.vhd|
+Z19 !s107 /home/hbhatt10/cpre381/CPRE3810/alu.vhd|
+!i113 0
+Z20 o-work work
+Z21 tExplicit 1 CvgOpt 0
+Abehavioral
+R10
+R11
+R12
+Z22 DEx4 work 3 alu 0 22 m80WX>b`Nb[jVb2X;h3Qe3
+!i122 15
+l16
+L15 52
+Vf_BFj2LZ9_F:Igj[UfT?m1
+!s100 RZXf4U04J8OCJiDbbCi;N2
+R15
+32
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 0
+R20
+R21
+Ebarrel_shifter
+R9
+Z23 DPx4 work 11 riscv_types 0 22 0bcBOKFDZl8jc86XlA2kE0
+R10
+R11
+R12
+!i122 3
+R1
+Z24 8/home/hbhatt10/cpre381/CPRE3810/components/barrel_shifter.vhd
+Z25 F/home/hbhatt10/cpre381/CPRE3810/components/barrel_shifter.vhd
+l0
+L6 1
+Vi?MX3__7?<aY96K=ADQP12
+!s100 OC@HWPihAKTdz0<6[=Q;a3
+R15
+32
+Z26 !s110 1761154262
+!i10b 1
+Z27 !s108 1761154262.000000
+Z28 !s90 -reportprogress|300|-work|work|/home/hbhatt10/cpre381/CPRE3810/components/barrel_shifter.vhd|
+Z29 !s107 /home/hbhatt10/cpre381/CPRE3810/components/barrel_shifter.vhd|
+!i113 0
+R20
+R21
+Abehavioral
+R23
+R10
+R11
+R12
+Z30 DEx4 work 14 barrel_shifter 0 22 i?MX3__7?<aY96K=ADQP12
+!i122 3
+l18
+L16 21
+VmUQEl^7nJ?9dcRNGXQ^871
+!s100 IhX]1P@h?H2Ng__ITOzJ=1
+R15
+32
+R26
+!i10b 1
+R27
+R28
+R29
+!i113 0
+R20
+R21
+Econtrol
+R9
+R23
+R10
+R11
+R12
+!i122 13
+R1
+Z31 8/home/hbhatt10/cpre381/CPRE3810/control.vhd
+Z32 F/home/hbhatt10/cpre381/CPRE3810/control.vhd
+l0
+L6 1
+VWelgeKo8ee:7P325^=?ia3
+!s100 _429KIUl4aRIEclIB1eLV2
+R15
+32
+Z33 !s110 1761155182
+!i10b 1
+Z34 !s108 1761155182.000000
+Z35 !s90 -reportprogress|300|-work|work|/home/hbhatt10/cpre381/CPRE3810/control.vhd|
+Z36 !s107 /home/hbhatt10/cpre381/CPRE3810/control.vhd|
+!i113 0
+R20
+R21
+Abehavioral
+R23
+R10
+R11
+R12
+DEx4 work 7 control 0 22 WelgeKo8ee:7P325^=?ia3
+!i122 13
+l20
+L19 101
+VWf7fWioHlzYFoSSXk2<8H0
+!s100 4m7C3[0VbYd5fj4KC^42I1
+R15
+32
+R33
+!i10b 1
+R34
+R35
+R36
+!i113 0
+R20
+R21
+Eriscv_processor
+R9
+R23
+R10
+R11
+R12
+!i122 10
+R1
+8/home/hbhatt10/cpre381/CPRE3810/TopLevel/RISCV_Processor.vhd
+F/home/hbhatt10/cpre381/CPRE3810/TopLevel/RISCV_Processor.vhd
+l0
+L6 1
+Vz6YoenIzdgnbNVhF6k:DB0
+!s100 LmAXP^`aa8S5?jiXS[]d02
+R15
+32
+!s110 1761155168
+!i10b 1
+!s108 1761155167.000000
+!s90 -reportprogress|300|-work|work|/home/hbhatt10/cpre381/CPRE3810/TopLevel/RISCV_Processor.vhd|
+!s107 /home/hbhatt10/cpre381/CPRE3810/TopLevel/RISCV_Processor.vhd|
+!i113 0
+R20
+R21
+Priscv_types
+R10
+R11
+R12
+!i122 12
+R9
+R1
+Z37 8/home/hbhatt10/cpre381/CPRE3810/RISCV_types.vhd
+Z38 F/home/hbhatt10/cpre381/CPRE3810/RISCV_types.vhd
+l0
+L5 31
+V0bcBOKFDZl8jc86XlA2kE0
+!s100 Nd]Qnaf4fQd1iWZYZ5agf2
+R15
+32
+Z39 !s110 1761155180
+!i10b 1
+Z40 !s108 1761155180.000000
+Z41 !s90 -reportprogress|300|-work|work|/home/hbhatt10/cpre381/CPRE3810/RISCV_types.vhd|
+Z42 !s107 /home/hbhatt10/cpre381/CPRE3810/RISCV_types.vhd|
+!i113 0
+R20
+R21
+Bbody
+R23
+R10
+R11
+R12
+!i122 12
+l0
+L37 2
+Vi`R8[gTVdabZcUl6O3O=h3
+!s100 5`K;0<d7gOGoL=7=e_9`c2
+R15
+32
+R39
+!i10b 1
+R40
+R41
+R42
+!i113 0
+R20
+R21
+Etb_alu
+Z43 w1761155149
+R10
+R11
+R12
+!i122 17
+R1
+Z44 8/home/hbhatt10/cpre381/CPRE3810/Test/tb_alu.vhd
+Z45 F/home/hbhatt10/cpre381/CPRE3810/Test/tb_alu.vhd
+l0
+L5 1
+VDzA7UZU>ZDd=DoLeiPV;:2
+!s100 @LFVBii^AiIL7O6k2>NeJ1
+R15
+32
+Z46 !s110 1761155194
+!i10b 1
+Z47 !s108 1761155194.000000
+Z48 !s90 -reportprogress|300|-work|work|/home/hbhatt10/cpre381/CPRE3810/Test/tb_alu.vhd|
+Z49 !s107 /home/hbhatt10/cpre381/CPRE3810/Test/tb_alu.vhd|
+!i113 0
+R20
+R21
+Asim
+R22
+R10
+R11
+R12
+DEx4 work 6 tb_alu 0 22 DzA7UZU>ZDd=DoLeiPV;:2
+!i122 17
+l14
+L8 99
+Vhb:m_aWFlWANW861gL^_B0
+!s100 S7f^j336ORgKNY66<Qo>R3
+R15
+32
+R46
+!i10b 1
+R47
+R48
+R49
+!i113 0
+R20
+R21
+Etb_barrel_shifter
+Z50 w1761154302
+R23
+R10
+R11
+R12
+!i122 5
+R1
+Z51 8/home/hbhatt10/cpre381/CPRE3810/Test/tb_barrel_shifter.vhd
+Z52 F/home/hbhatt10/cpre381/CPRE3810/Test/tb_barrel_shifter.vhd
+l0
+L6 1
+VBZ4Ii>ZB?F5V]QddUlHzF0
+!s100 gSgbBJ40TYnQ[^Y`:e7fj3
+R15
+32
+Z53 !s110 1761154308
+!i10b 1
+Z54 !s108 1761154308.000000
+Z55 !s90 -reportprogress|300|-work|work|/home/hbhatt10/cpre381/CPRE3810/Test/tb_barrel_shifter.vhd|
+Z56 !s107 /home/hbhatt10/cpre381/CPRE3810/Test/tb_barrel_shifter.vhd|
+!i113 0
+R20
+R21
+Asim
+R30
+R23
+R10
+R11
+R12
+DEx4 work 17 tb_barrel_shifter 0 22 BZ4Ii>ZB?F5V]QddUlHzF0
+!i122 5
+l17
+L9 60
+VV<NI0Z=R`:1]dLPehk]9C0
+!s100 4[?^9EYMB3DE6a5z2gRoA1
+R15
+32
+R53
+!i10b 1
+R54
+R55
+R56
+!i113 0
+R20
+R21
